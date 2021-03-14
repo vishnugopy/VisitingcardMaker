@@ -18,5 +18,9 @@ generatebutton.addEventListener("click" , () =>{
     jobpreview.innerHTML = job.value ;
     mailpreview.innerHTML = mail.value ;
     telpreview.innerHTML = tel.value ;
-    logopreview.src = logo;
+    logopreview.src = window.URL.createObjectURL(logo.files[0]);
+    console.log(window.URL.createObjectURL(logo.files[0]));
 })
+
+
+
