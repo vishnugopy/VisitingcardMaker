@@ -3,6 +3,8 @@
 
 *{
     font-family: 'Mulish', sans-serif;
+    font-size: 103%;
+    outline: none;
 }
 
 main{
@@ -17,8 +19,42 @@ main{
     justify-content: space-evenly;
     background: rgba(0, 225, 255, 0.144);
 
+    div{
+        display: flex;
+        flex-direction: column;
+
+
+        .inputs{
+            padding:3%;
+            margin: 1% 0%;
+            outline: none;
+            border: 1px solid #004cff8c;
+            border-radius: 5px;
+        }
+    }
 }
 
-.preview{
-    padding: 2%;
-}
+
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    width: 100%;
+    content: 'Select Your Logo';
+    display: inline-block;
+    background: #004cff8c;
+    color: white;
+    border-radius: 5px;
+    padding: 3% ;
+    outline: none ;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .preview{
+      padding: 3%;
+  }
+
+
+
